@@ -9,10 +9,9 @@ This project demonstrates a foundational Zero-Knowledge Proof (ZKP) use case:
 
 We compute a **recovery score** based on 3 private weights and a public modifier:
 
-```math
-recovery\_score = 2 \cdot w_1 + 3 \cdot w_2 + 5 \cdot w_3 + \texttt{public\_modifier}
+recovery_score $= 2 \cdot w_1 + 3 \cdot w_2 + 5 \cdot w_3 +$ public_modifier
 
-
+```bash
 /// Proves knowledge of private w1, w2, w3 such that:
 /// required_score = 2*w1 + 3*w2 + 5*w3 + public_modifier
 fn main(w1: Field, w2: Field, w3: Field, public_modifier: pub Field, required_score: pub Field) {
